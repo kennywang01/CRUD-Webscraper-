@@ -4,18 +4,26 @@
 <h1>CRUD Web Scraper</h1>
 {% endblock %}
 
-{% block body %} 
-<body> Hello world </body>
-{% endblock %}
-
-{% block span %}
-<span>Some item</span>
-{% endblock %}
-
-{% block list %}
-<ol>
-    <li>Stuff</li>
-</ol>
+{% block body %}
+<div class="content">
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Avg Price</th>
+            <th>Avg Rating</th>
+            <th>Update/Delete</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <a href="">Update</a>
+                <a href="">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>
 {% endblock %}
 
 

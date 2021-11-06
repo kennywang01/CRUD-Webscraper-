@@ -10,16 +10,13 @@
         <a href="https://www.ebay.com/" target="_blank">Source: eBay.com</a>
     </div>
     <div>
-        <input type="text" name="item-name" id="item-form"><input type="submit" name="submit-name" id="subtmit-form">
+        <form action="/" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search Item">
+        </form>
     </div>
 
-    <div>
-        {% block span %}{% endblock %}
-    </div>
+    {% block body %}{% endblock %}
 
-    <div>
-        <h3>Item History</h3>
-        {% block list %}{% endblock %}
-    </div>
 </body>
 </html>
