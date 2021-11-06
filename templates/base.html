@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div>
+        <a href="https://www.ebay.com/" target="_blank">Source: eBay.com</a>
+    </div>
+    <div>
+        <input type="text" name="item-name" id="item-form"><input type="submit" name="submit-name" id="subtmit-form">
+    </div>
+
+    <div>
+        {% block span %}{% endblock %}
+    </div>
+
+    <div>
+        <h3>Item History</h3>
+        {% block list %}{% endblock %}
+    </div>
+</body>
+</html>
